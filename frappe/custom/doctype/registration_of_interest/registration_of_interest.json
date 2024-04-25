@@ -1,0 +1,328 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "format:ROI-{#####}",
+ "creation": "2024-01-16 10:43:13.612477",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "engine": "InnoDB",
+ "field_order": [
+  "interest_in_admission_to_section",
+  "early_years_nursery_grade_1",
+  "column_break_kp8r0",
+  "elementary_school_grade_2_to_5",
+  "column_break_v7gj9",
+  "middle_school_grade_6_to_8",
+  "column_break_xeuqe",
+  "high_school_grade_9_to_12",
+  "studentapplicant_info_section",
+  "student_applicant_information",
+  "section_break_dom5e",
+  "parent_or_guardians_name",
+  "parent_or_guardians_occupation",
+  "contact_email",
+  "column_break_veyxy",
+  "residential_address",
+  "contact_number",
+  "how_did_you_hear_about_us_section",
+  "social_media",
+  "headstart_parent_please_mention_name_of_the_parent",
+  "headstart_sta\ufb00_member__please_mention_name_of_the_person",
+  "for_admissions_o\ufb03ce_use_section",
+  "date",
+  "column_break_ouyyx",
+  "filled_by_parent",
+  "column_break_dl1uc",
+  "filled_by_relative_relative",
+  "column_break_jcovt",
+  "filled_by_family_friend",
+  "column_break_8qjwr",
+  "filled_by_other",
+  "section_break_miloy",
+  "placement_assessment_required_for",
+  "reason_for_transfer",
+  "admissions__o\ufb03ce_representative_section",
+  "name1",
+  "column_break_uhuey",
+  "signature",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "interest_in_admission_to_section",
+   "fieldtype": "Section Break",
+   "label": "Interest in admission to"
+  },
+  {
+   "default": "0",
+   "fieldname": "early_years_nursery_grade_1",
+   "fieldtype": "Check",
+   "label": "Early Years Nursery Grade 1"
+  },
+  {
+   "fieldname": "column_break_kp8r0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "elementary_school_grade_2_to_5",
+   "fieldtype": "Check",
+   "label": "Elementary School Grade 2 to 5"
+  },
+  {
+   "fieldname": "column_break_v7gj9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "middle_school_grade_6_to_8",
+   "fieldtype": "Check",
+   "label": "Middle School Grade 6 to 8"
+  },
+  {
+   "fieldname": "column_break_xeuqe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "high_school_grade_9_to_12",
+   "fieldtype": "Check",
+   "label": "High School Grade 9 to 12"
+  },
+  {
+   "fieldname": "studentapplicant_info_section",
+   "fieldtype": "Section Break",
+   "label": "Student/Applicant Info"
+  },
+  {
+   "fieldname": "parent_or_guardians_name",
+   "fieldtype": "Data",
+   "label": "Parent or Guardians Name"
+  },
+  {
+   "fieldname": "parent_or_guardians_occupation",
+   "fieldtype": "Data",
+   "label": "Parent or Guardians Occupation"
+  },
+  {
+   "fieldname": "residential_address",
+   "fieldtype": "Data",
+   "label": "Residential Address"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "contact_email",
+   "fieldtype": "Data",
+   "label": "Contact Email"
+  },
+  {
+   "fieldname": "how_did_you_hear_about_us_section",
+   "fieldtype": "Section Break",
+   "label": "How did you hear about us"
+  },
+  {
+   "default": "0",
+   "fieldname": "social_media",
+   "fieldtype": "Check",
+   "label": "Social Media"
+  },
+  {
+   "default": "0",
+   "fieldname": "headstart_parent_please_mention_name_of_the_parent",
+   "fieldtype": "Check",
+   "label": "Headstart Parent Please mention name of the parent"
+  },
+  {
+   "default": "0",
+   "fieldname": "headstart_sta\ufb00_member__please_mention_name_of_the_person",
+   "fieldtype": "Check",
+   "label": "Headstart Sta\ufb00 Member  Please mention name of the person"
+  },
+  {
+   "fieldname": "for_admissions_o\ufb03ce_use_section",
+   "fieldtype": "Section Break",
+   "label": "For Admissions O\ufb03ce Use"
+  },
+  {
+   "fieldname": "column_break_veyxy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "filled_by_parent",
+   "fieldtype": "Check",
+   "label": "Filled by Parent"
+  },
+  {
+   "fieldname": "column_break_dl1uc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "filled_by_relative_relative",
+   "fieldtype": "Check",
+   "label": "Filled by Relative"
+  },
+  {
+   "fieldname": "column_break_jcovt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "filled_by_family_friend",
+   "fieldtype": "Check",
+   "label": "Filled by Family Friend"
+  },
+  {
+   "fieldname": "column_break_8qjwr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "filled_by_other",
+   "fieldtype": "Check",
+   "label": "Filled by Other"
+  },
+  {
+   "fieldname": "column_break_ouyyx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_miloy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "placement_assessment_required_for",
+   "fieldtype": "Data",
+   "label": "Placement Assessment Required for"
+  },
+  {
+   "fieldname": "reason_for_transfer",
+   "fieldtype": "Data",
+   "label": "Reason for transfer"
+  },
+  {
+   "fieldname": "admissions__o\ufb03ce_representative_section",
+   "fieldtype": "Section Break",
+   "label": "Admissions  O\ufb03ce Representative"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "column_break_uhuey",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "student_applicant_information",
+   "fieldtype": "Table",
+   "label": "Student Applicant Information",
+   "options": "Student Applicant Info"
+  },
+  {
+   "fieldname": "section_break_dom5e",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Registration of Interest",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-ticket",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-16 11:06:56.023967",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Registration of Interest",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchase Manager",
+   "set_user_permissions": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Stock User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Purchaser (Supply Chain)",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

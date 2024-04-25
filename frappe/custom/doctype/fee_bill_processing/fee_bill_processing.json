@@ -1,0 +1,285 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:FBP-{######}",
+ "creation": "2024-03-13 10:24:43.668017",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "column_break_epugx",
+  "fee_type",
+  "column_break_ahatz",
+  "branch",
+  "column_break_jvqjd",
+  "academic_year",
+  "section_break_9eyx8",
+  "period",
+  "column_break_0am7j",
+  "fee_year",
+  "column_break_6vxf0",
+  "fee_month",
+  "section_break_ipzcg",
+  "charged_from",
+  "column_break_c9du2",
+  "charges_to",
+  "column_break_ljncn",
+  "bill_date",
+  "column_break_7no3v",
+  "ledger_date",
+  "due_dates_section",
+  "first_due_date",
+  "second_due_date",
+  "third_due_date",
+  "column_break_legpe",
+  "first_validity",
+  "second_validity",
+  "third_validity",
+  "amended_from",
+  "students_tab",
+  "student_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Academic Year",
+   "options": "Academic Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_9eyx8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fee_year",
+   "fieldtype": "Select",
+   "label": "Fee year",
+   "options": "\n2024\n2025"
+  },
+  {
+   "fieldname": "fee_month",
+   "fieldtype": "Select",
+   "label": "Fee Month",
+   "options": "\nJan\nFeb\nMar\nApr\nMay\nJun\nJuly\nAug\nSep\nOct\nNov\nDec"
+  },
+  {
+   "fieldname": "column_break_ahatz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_0am7j",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ipzcg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "period",
+   "fieldtype": "Data",
+   "label": "Period",
+   "reqd": 1
+  },
+  {
+   "fieldname": "charged_from",
+   "fieldtype": "Date",
+   "label": "Charged From",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ljncn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bill_date",
+   "fieldtype": "Date",
+   "label": "Bill Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "charges_to",
+   "fieldtype": "Date",
+   "label": "Charges To",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ledger_date",
+   "fieldtype": "Date",
+   "label": "Ledger Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "due_dates_section",
+   "fieldtype": "Section Break",
+   "label": "Due Dates"
+  },
+  {
+   "fieldname": "first_due_date",
+   "fieldtype": "Date",
+   "label": "First Due Date"
+  },
+  {
+   "fieldname": "second_due_date",
+   "fieldtype": "Date",
+   "label": "Second Due Date"
+  },
+  {
+   "fieldname": "third_due_date",
+   "fieldtype": "Date",
+   "label": "Third Due Date"
+  },
+  {
+   "fieldname": "column_break_legpe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "first_validity",
+   "fieldtype": "Date",
+   "label": "First Validity"
+  },
+  {
+   "fieldname": "second_validity",
+   "fieldtype": "Date",
+   "label": "Second Validity"
+  },
+  {
+   "fieldname": "third_validity",
+   "fieldtype": "Date",
+   "label": "Third Validity"
+  },
+  {
+   "fieldname": "column_break_6vxf0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fee Bill Processing",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jvqjd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_c9du2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7no3v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_epugx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fee_type",
+   "fieldtype": "Link",
+   "label": "Fee Type",
+   "options": "Fee Type"
+  },
+  {
+   "fieldname": "students_tab",
+   "fieldtype": "Tab Break",
+   "label": "Students"
+  },
+  {
+   "fieldname": "student_details",
+   "fieldtype": "Table",
+   "label": "Student Details",
+   "options": "Fee Bill Processing Detail"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-26 15:13:25.759783",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Fee Bill Processing",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Academics User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

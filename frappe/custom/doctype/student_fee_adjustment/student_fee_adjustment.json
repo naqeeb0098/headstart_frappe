@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:SFA-{######}",
+ "creation": "2024-03-01 17:25:22.302198",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_information_section",
+  "student",
+  "date",
+  "joining_date",
+  "column_break_8biqr",
+  "branch",
+  "school",
+  "section",
+  "program",
+  "remarks",
+  "adjustment_detail_section",
+  "student_fee_adjustment_detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_information_section",
+   "fieldtype": "Section Break",
+   "label": "Student Information"
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Student",
+   "options": "Student",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "student.joining_date",
+   "fieldname": "joining_date",
+   "fieldtype": "Data",
+   "label": "Joining Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8biqr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "student.branch",
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student.school",
+   "fieldname": "school",
+   "fieldtype": "Data",
+   "label": "School",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student.section",
+   "fieldname": "section",
+   "fieldtype": "Data",
+   "label": "Section",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student.program",
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "label": "Program",
+   "read_only": 1
+  },
+  {
+   "fieldname": "adjustment_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Adjustment Detail"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "student_fee_adjustment_detail",
+   "fieldtype": "Table",
+   "label": "Student Fee Adjustment Detail",
+   "options": "Student Fee Adjustment Detail"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-01 17:28:50.416469",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Student Fee Adjustment",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Academics User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

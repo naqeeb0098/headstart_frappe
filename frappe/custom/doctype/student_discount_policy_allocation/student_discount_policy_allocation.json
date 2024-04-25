@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:SDPA-{######}",
+ "creation": "2024-03-01 12:31:37.160014",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_information_section",
+  "name1",
+  "student",
+  "student_name",
+  "column_break_jwnys",
+  "branch",
+  "school",
+  "section",
+  "program",
+  "fee_structure_allocation_section",
+  "discount_policy",
+  "custom_discount_policy",
+  "amended_from",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "student_information_section",
+   "fieldtype": "Section Break",
+   "label": "Student Information"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Student",
+   "options": "Student",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "student.joining_date",
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "label": "Joining Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_jwnys",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "student.branch",
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student.school",
+   "fieldname": "school",
+   "fieldtype": "Data",
+   "label": "School",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student.section",
+   "fieldname": "section",
+   "fieldtype": "Data",
+   "label": "Section",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student.program",
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "label": "Program",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fee_structure_allocation_section",
+   "fieldtype": "Section Break",
+   "label": "Student Category"
+  },
+  {
+   "fieldname": "discount_policy",
+   "fieldtype": "Link",
+   "label": "Student Category",
+   "options": "Student Category"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Student Discount Policy Allocation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "custom_discount_policy",
+   "fieldtype": "Table",
+   "label": "Custom DIscount Policy",
+   "options": "Custom Discount Policy"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-29 12:38:54.824088",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Student Discount Policy Allocation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Academics User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student Billing",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "name1",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

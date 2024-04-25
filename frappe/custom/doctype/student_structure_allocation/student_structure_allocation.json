@@ -1,0 +1,233 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:SFS-{######}",
+ "creation": "2024-02-26 11:28:25.561532",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student_information_section",
+  "allocation_date",
+  "end_date",
+  "name1",
+  "student",
+  "student_name",
+  "column_break_jwnys",
+  "branch",
+  "school",
+  "section",
+  "program",
+  "fee_structure_allocation_section",
+  "fee_structure",
+  "fee_acdemic_term",
+  "total_amount",
+  "column_break_bzz42",
+  "fee_branch",
+  "fee_program",
+  "fee_factor",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Student",
+   "options": "Student",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fee_structure",
+   "fieldtype": "Link",
+   "label": "Fee Structure",
+   "options": "Fee Structure",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Student Structure Allocation",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student.joining_date",
+   "fieldname": "student_name",
+   "fieldtype": "Data",
+   "label": "Joining Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "student_information_section",
+   "fieldtype": "Section Break",
+   "label": "Student Information"
+  },
+  {
+   "fieldname": "column_break_jwnys",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "student.branch",
+   "fieldname": "branch",
+   "fieldtype": "Data",
+   "label": "Branch",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student.school",
+   "fieldname": "school",
+   "fieldtype": "Data",
+   "label": "School",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student.section",
+   "fieldname": "section",
+   "fieldtype": "Data",
+   "label": "Section",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "student.program",
+   "fieldname": "program",
+   "fieldtype": "Data",
+   "label": "Program",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fee_structure_allocation_section",
+   "fieldtype": "Section Break",
+   "label": "Fee Structure Allocation"
+  },
+  {
+   "fetch_from": "fee_structure.branch",
+   "fieldname": "fee_branch",
+   "fieldtype": "Data",
+   "label": "Fee Branch ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bzz42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "fee_structure.program",
+   "fieldname": "fee_program",
+   "fieldtype": "Data",
+   "label": "Fee Program",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "fee_structure.academic_term",
+   "fieldname": "fee_acdemic_term",
+   "fieldtype": "Data",
+   "label": "Fee Acdemic Term",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "fee_structure.total_amount",
+   "fieldname": "total_amount",
+   "fieldtype": "Data",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "fee_factor",
+   "fieldtype": "Select",
+   "label": "Fee Factor",
+   "options": "0.5\n1\n1.5\n2\n2.5\n3\n3.5\n4\n4.5\n5\n5.5\n6",
+   "reqd": 1
+  },
+  {
+   "fieldname": "allocation_date",
+   "fieldtype": "Date",
+   "label": "Allocation Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-13 13:37:32.316276",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "Student Structure Allocation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Academics User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Instructor",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Guest",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Student",
+   "share": 1
+  }
+ ],
+ "search_fields": "name1",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
